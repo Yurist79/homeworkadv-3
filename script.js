@@ -176,7 +176,7 @@ Hamburger.prototype.addTopping = function (topping) {
 Hamburger.prototype.removeTopping = function (topping) {
     try {
         if (!this.allTopping.includes(topping)) {
-            throw new HamburgerException("Add Error.topping already exists");
+            throw new HamburgerException("Delete Error.no topping");
         }
     } catch (e) {}
 
@@ -213,7 +213,7 @@ Hamburger.prototype.getStuffing = function () {
 // Узнать цену гамбургера  Цена в тугриках
 
 prise.onclick = function () {
-    valPrice.value = newHamburger.calculatePrice()
+    valPrice.value = newHamburger.calculatePrice() +" " +"грн."
 }
 
 Hamburger.prototype.calculatePrice = function () {
@@ -238,7 +238,7 @@ Hamburger.prototype.calculatePrice = function () {
 
 
 calories.onclick = function () {
-    valCalories.value = newHamburger.calculateCalories()
+    valCalories.value = newHamburger.calculateCalories() +" " +"Ккал."
 }
 Hamburger.prototype.calculateCalories = function () {
     var calAll = [];

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger-BAR</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+</head>
+
+<body>
+
+    <div class="display">
+        <div class="dispiay_menu">
+            <div id="scoreboard_order">
+                <div id="order_stafing">
+                    <button id="start_order">"to create a new order"</button>
+
+                    <!--Блок выбора размера и начинки гамбургера-->
+                    <!-- выбор размера -->
+                    <div id="burg_size">
+                        <form id="form_size">
+                            <p><b>choose the size of hamburger</b></p>
+                            <p><input type="radio" name="answer" value="small"> &quot small size &quot</p>
+                            <p><input type="radio" name="answer" value="big"> &quot big size &quot</p>
+                        </form>
+                        <!-- выбор  начинки -->
+                        <form id="form_stuffing">
+                            <p><b>choose the stuffing of hamburger</b></p>
+                            <p><input type="radio" name="answer" value="Cheese"> &quot CHEESE &quot</p>
+                            <p><input type="radio" name="answer" value="Salad"> &quot SALAD&quot</p>
+                            <p><input type="radio" name="answer" value="Potato"> &quot POTATO &quot</p>
+
+                        </form>
+                        <!--Кнопка запуска функции конструктора создания гамбургера  гамбургера , клик кнопки стр. 86 в JS файле запуск конструктора 105строка -->
+                        <button class="enter_size">"ENTER"</button>
+                    </div>
+
+                    <!--Блок выбора добавки гамбургера-->
+                    <div id="burg_toping">
+                        Topping
+                        <br>
+                        <br>
+                        <div>
+                            <button class="add_mayo">"Add"</button>
+                            <b>MAYO</b>
+                            <button class="delete_mayo">"Delete"</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <button class="add_spice">"Add"</button>
+                            <b>SPICE</b>
+                            <button class="delete_spice">"Delete"</button>
+                        </div>
+                        <br>
+                        <br>
+
+                        <button id="save_order">"Save your order"</button>
+                    </div>
+                    <div id="finaly"> Your order is being prepared!</div>
+                    <form class="Exception_wind">
+                       <legend>"error report"</legend>
+                         <textarea id="report" type="text" value="  " disabled></textarea>
+                    </form>
+                </div>
+
+
+
+                <!--Блок вывода информации о параметрах гамбургера в визуальном интерфейсу-->
+                <div class=order_info>
+                    <div>
+                        <h5>scoreboard order</h5>
+                        <div class="order_datail-info">
+
+                            <h6>Your order</h6>
+
+                            <div> Size - <input id="valSize" type="text" value="  0" disabled></div>
+                            <div>Stuffing - <input id="valStuffing" type="text" value=" 0" disabled> </div>
+                            <div>Topping Mayo - <input id="valMayo" type="text" value=" No" disabled></div>
+                            <div>Topping Spice - <input id="valSpice" type="text" value=" No" disabled></div>
+                            <div><button id="prise"> "Calculation Price" </button> - <input id="valPrice" type="text" value="  0 " disabled></div>
+                            <div><button id="calories"> "Calculation Calories" </button> - <input id="valCalories" type="text" value=" 0 " disabled></div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
